@@ -3,3 +3,4 @@ I am trying to create an LSTM that is "maxed-out"; that is, it is meant to be th
 
 ## DETAILS ##
 
+Language: Python 
