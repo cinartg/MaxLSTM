@@ -42,8 +42,8 @@ if IS_KAGGLE and torch.cuda.device_count() > 1:
     model = nn.DataParallel(model)
 
 # 5. SIMPLE TRAINING LOOP SANITY CHECK
-criterion = nn.BCEWithLogitsLoss()
-optimizer = optim.Adam(model.parameters(), lr=0.001)
+criterion = nn.CrossEntropyLoss()
+optimizer = optim.Adam(model.parameters(), lr=1e-3)
 
 print("Starting training loop...")
 for epoch in range(config.num_epochs):
